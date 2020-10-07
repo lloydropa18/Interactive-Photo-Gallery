@@ -1,0 +1,44 @@
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+.searchbar{
+    text-align: center;
+    margin: 20px auto;
+}
+#searchBar {
+    width: 70%;
+    padding: 10px 5px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+/* for tablets */
+@media (min-width:768px){
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 40px;
+    }
+}
+
+
+/* for desktop */
+@media (min-width:1220px){
+    .searchbar{
+        margin: 50px auto;
+    }
+    #searchBar {
+        width: 50%;
+    }
+    .grid-container{
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 50px;
+    }
+}
